@@ -66,6 +66,19 @@
     });
   }
 
+  /* ----- Scroll to top -----
+     Anchoring to the sticky header (#top) is unreliable: some browsers see it
+     as already in view and don't scroll. Handle these links explicitly. */
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var topLinks = document.querySelectorAll('a[href="#top"]');
+  topLinks.forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+      if (history.replaceState) history.replaceState(null, "", location.pathname + location.search);
+    });
+  });
+
   /* ----- Current year ----- */
   var year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());

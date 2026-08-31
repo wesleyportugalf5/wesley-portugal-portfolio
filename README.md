@@ -1,9 +1,9 @@
-# Portfólio — Wesley Portugal Azevedo Silva
+# Portfólio — Wesley Portugal
 
 Portfólio pessoal de desenvolvimento de software. Estudante de Engenharia de Software
-(UNINTER) em busca do primeiro estágio na área de desenvolvimento.
+(UNINTER) em busca do primeiro estágio na área de desenvolvimento de software.
 
-🔗 **Site:** _adicione a URL após o deploy_
+🔗 **Site:** _https://wesleyportugalportfolio.netlify.app_
 
 ## Sobre este projeto
 
@@ -24,7 +24,7 @@ Site estático de página única, sem dependências de build:
 └── assets/
     ├── wesley-portugal.png
     ├── favicon.svg
-    └── Wesley-Portugal-Azevedo-Silva-CV.pdf
+    └── Wesley-Portugal-CV.pdf
 ```
 
 ## Rodando localmente
@@ -37,14 +37,6 @@ npx serve .
 # ou
 python -m http.server 8000
 ```
-
-## Deploy
-
-Compatível com qualquer hospedagem de site estático:
-
-- **Netlify:** arraste a pasta em app.netlify.com/drop, ou conecte o repositório
-- **Vercel:** `vercel` na raiz do projeto
-- **GitHub Pages:** Settings → Pages → branch `main` / pasta `/root`
 
 ## Projetos em destaque
 
